@@ -1,7 +1,111 @@
+//fonts
+@font-face {
+  font-family: "Lovelo Black";
+  src: url("fonts/LoveloBlack.woff");
+}
+@font-face {
+  font-family: "Lovelo Line Bold";
+  src: url("fonts/LoveloLineBold.woff");
+}
+@font-face {
+  font-family: "Lovelo Line Light";
+  src: url("fonts/LoveloLineLight.woff");
+}
+.lovelo-bold{
+  font-family: "Lovelo Line Bold";
+}
+.lovelo-black{
+  font-family: "Lovelo Black";
+}
+.lovelo-light{
+  font-family: "Lovelo Line Light";
+}
+
+mark{
+  background-color: inherit;
+}
 #navigation-wrapper{
+  width: 100%;
   padding-left: 10vw;
   padding-right: 10vw;
 }
+
+nav{
+  ul{
+    a{
+      .logo-text{
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+}
+
+.nav-text{
+  font-size: 1.25rem !important;
+}
+#particles-js{
+  width: 100% !important;
+  height: 95vh !important;
+  background-color: #b61924;
+}
+#particle-container{
+  position:absolute;
+  height: 100%;
+  padding-top: 20vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0;
+  background-color:rgba(255, 0, 0, 0.2);
+  width: 100%;
+
+  h1{
+    text-align: center;
+    font-size: 5.5em;
+  }
+  h3{
+    text-align: center;
+    font-size: 2em;
+  }
+  .leading-name{
+    margin-top: 5vh;
+  }
+}
+
+
+//////////////////AURORA SECTIOM
+.aurora-outer {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(30deg, #ba0c2f 0%, #ba0c2f 50%, #a7a8aa 100%);
+  background-size: 200%;
+  animation: aurora 10s infinite;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right top;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+div {
+  display: block;
+  height: 180px;
+  width: 180px;
+  position: relative;
+}
+
 
 
 //////////////////////////////////////// MEDIA QUERIES
