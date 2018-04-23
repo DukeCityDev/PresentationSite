@@ -45,7 +45,7 @@ nav{
 }
 #particles-js{
   width: 100% !important;
-  height: 95vh !important;
+  height: 100vh !important;
   background-color: #b61924;
 }
 #particle-container{
@@ -76,9 +76,18 @@ nav{
 .aurora-outer {
   width: 100%;
   height: 100vh;
+  padding: 30vh 5vw 5vw 10vh;
   background: linear-gradient(30deg, #ba0c2f 0%, #ba0c2f 50%, #a7a8aa 100%);
   background-size: 200%;
   animation: aurora 10s infinite;
+
+  #aurora-inner{
+    width: 100%;
+    text-align: center;
+    h3{
+      margin: 0 !important;
+    }
+  }
 }
 
 @keyframes aurora {
@@ -99,14 +108,41 @@ nav{
   }
 }
 
-div {
-  display: block;
-  height: 180px;
-  width: 180px;
-  position: relative;
+/////////////////////////////////LASER MARKET SECTION
+#laser-market{
+  padding-top:7.5vh;
 }
 
+///////////////////////// Target Businesses
+#target-business{
+  height: 100vh;
+  overflow: hidden;
+  padding: 2vh;
+  #target-carousel{
+    height: 80vh;
+  }
+}
+.biz-name{
+  margin-top: .2em !important;
+}
+.biz-text{
 
+}
+
+.biz-img{
+  height:300px!important;
+  width:400px !important;
+  margin-bottom: 10px;
+}
+
+.carousel{
+  visibility: visible !important;
+}
+
+.carousel-item{
+  height: 80vh;
+  visibility: visible !important;
+}
 
 //////////////////////////////////////// MEDIA QUERIES
 @media (max-width: 1440px) {

@@ -1,3 +1,7 @@
+
+
+
+
 //PARTICLES JS
 /* ---- particles.js config ---- */
 
@@ -113,9 +117,3 @@ particlesJS("particles-js", {
 });
 
 
-///////////////////////////////////
-$(document).ready(function(){
-    $('.scrollspy').scrollSpy({
-        scrollOffset: 0
-    });
-});

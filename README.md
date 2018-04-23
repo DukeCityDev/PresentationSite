@@ -9,13 +9,13 @@ Presentation Website
 			- Description of US Patent
 			- What US Patent does
 		- How Prisms enhance Diode Lasers
-			- What this means to the application of lasers
+			- What this means to the application of diode lasers
+		    - The End User and how MP will help them meet their laser needs
+        			- How Companies who sell to the End User will benefit
+        			- How much they would be willing to pay for MP to benefit their End User
 		- Laser Market
 			- Hard numbers on size of laser market
 				- more niche parts of the diode laser market
-		- The End User and how MP will help them meet their laser needs
-			- How Companies who sell to the End User will benefit
-			- How much they would be willing to pay for MP to benifit their End User
 		- How we will market and sell to the End User
 			- Sales Teams
 			- Targetting certain companies who dominate the laser industries we are targeting
