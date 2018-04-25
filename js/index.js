@@ -1,3 +1,5 @@
+let elem = document.querySelector('.carousel');
+let instance = M.Carousel.init(elem);
 
 
 
@@ -227,4 +229,128 @@ particlesJS("particles-js2", {
     "retina_detect": true
 });
 
+function getOffset(el) {
+    el = el.getBoundingClientRect();
+    return {
+        left: el.left + window.scrollX,
+        top: el.top + window.scrollY
+    }
+}
 
+let initializeScroll = (scrollElement)=>{
+    let scrollElementFinal = document.getElementById(scrollElement);
+    let {top} = getOffset(scrollElementFinal);
+    console.log(top);
+    scrollTo(top);
+};
+
+
+let scrollTo = (x)=>{window.scroll({
+    top: x,
+    left: 0,
+    behavior: 'smooth'
+});};
+
+let slideShowFunction = (clicks)=>{
+    if(clicks === 1){
+        initializeScroll("tech-description");
+    } else if (clicks === 2){
+        $(".desc-1").css("opacity",1);
+    } else if (clicks === 3){
+        $(".desc-2").css("opacity",1);
+    } else if (clicks === 4){
+        initializeScroll("means-section");
+    }else if (clicks === 5){
+        $("#means-text").fadeOut(800);
+        setTimeout(
+            function(){
+                $("#means-text").text("It changes for reason 1");
+                $("#means-text").fadeIn(800);
+            },
+            800);
+    } else if (clicks === 6){
+        $("#means-text").fadeOut(800);
+        setTimeout(
+            function(){
+                $("#means-text").text("It changes for reason 2");
+                $("#means-text").fadeIn(800);
+            },
+            800);
+    } else if (clicks === 7){
+        $("#means-text").fadeOut(800);
+        setTimeout(
+            function(){
+                $("#means-text").text("It changes for reason 3");
+                $("#means-text").fadeIn(800);
+            },
+            800);
+    } else if (clicks === 8){
+        $("#means-text").fadeOut(800);
+        setTimeout(
+            function(){
+                $("#means-text").text("It changes for reason 4");
+                $("#means-text").fadeIn(800);
+            },
+            800);
+    } else if(clicks === 9){
+        initializeScroll("laser-market");
+        let table = document.getElementById("market-table");
+        let marketText = document.getElementById("market-text");
+        marketText.style.opacity = 1;
+        table.style.opacity = 1;
+    } else if(clicks === 10){
+        initializeScroll("business-model-section");
+    } else if (clicks === 11){
+        $("#business-model-text").fadeOut(800);
+        setTimeout(
+            function(){
+                $("#business-model-text").text("Biz Model Text 2");
+                $("#business-model-text").fadeIn(800);
+            },
+            800);
+    } else if (clicks === 12){
+        $("#business-model-text").fadeOut(800);
+        setTimeout(
+            function(){
+                $("#business-model-text").text("Biz Model Text 3");
+                $("#business-model-text").fadeIn(800);
+            },
+            800);
+    } else if (clicks === 13){
+        $("#business-model-text").fadeOut(800);
+        setTimeout(
+            function(){
+                $("#business-model-text").text("Biz Model Text 4");
+                $("#business-model-text").fadeIn(800);
+            },
+            800);
+    } else if (clicks === 14) {
+        $("#business-model-text").fadeOut(800);
+        setTimeout(
+            function () {
+                $("#business-model-text").text("Biz Model Text 5");
+                $("#business-model-text").fadeIn(800);
+            },
+            800);
+    } else if (clicks === 15){
+        initializeScroll("target-business");
+    } else if (clicks === 16){
+        instance.next();
+    } else if (clicks === 17){
+        instance.next();
+    } else if (clicks === 18){
+        instance.next();
+    } else if(clicks === 19){
+        initializeScroll("particles-js2");
+    }
+};
+
+let slideShow = ()=>{
+    let clicks = 0;
+   $(window).click((event)=>{
+        clicks++;
+        slideShowFunction(clicks);
+    });
+};
+
+slideShow();

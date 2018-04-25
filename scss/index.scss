@@ -45,7 +45,7 @@ nav{
 }
 #particles-js{
   width: 100% !important;
-  height: 100vh !important;
+  //height: 100vh !important;
   background-color: #b61924;
 }
 #particle-container{
@@ -131,9 +131,46 @@ nav{
   }
 }
 
+////////////////////////////////////// TECH DESCRIPTION SECTION
+.desc-1{
+
+  opacity: 0;
+  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  -ms-transition: opacity 5s;
+  -o-transition: opacity 5s;
+  transition: opacity 5s;
+}
+
+.desc-2{
+
+  opacity: 0;
+  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  -ms-transition: opacity 5s;
+  -o-transition: opacity 5s;
+  transition: opacity 5s;
+}
+
 /////////////////////////////////LASER MARKET SECTION
 #laser-market{
   padding-top:7.5vh;
+}
+
+#market-text{
+  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  -ms-transition: opacity 5s;
+  -o-transition: opacity 5s;
+  transition: opacity 5s;
+}
+
+#market-table{
+  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  -ms-transition: opacity 5s;
+  -o-transition: opacity 5s;
+  transition: opacity 5s;
 }
 
 ///////////////////////// Target Businesses
