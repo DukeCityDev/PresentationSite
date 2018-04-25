@@ -72,6 +72,29 @@ nav{
 }
 
 
+#particle-container2{
+  position:absolute;
+  height: 100%;
+  padding-top: 20vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0;
+  background-color:rgba(255, 0, 0, 0.2);
+  width: 100%;
+
+  h1{
+    text-align: center;
+    font-size: 5.5em;
+  }
+  h3{
+    text-align: center;
+    font-size: 2em;
+  }
+  .leading-name{
+    margin-top: 5vh;
+  }
+}
+
 //////////////////AURORA SECTIOM
 .aurora-outer {
   width: 100%;

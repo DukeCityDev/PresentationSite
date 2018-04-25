@@ -19,9 +19,9 @@
             <div id="navigation-wrapper" class="nav-wrapper black">
                 <a id="brand-logo" href="" class="brand-logo"><mark class="logo-text lovelo-black  white-text">NM</mark><mark class="logo-text lovelo-bold white-text"> Prism</mark></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li ><a class="lovelo-black nav-text"href="#black">Nav 1</a></li>
-                    <li ><a class="lovelo-black nav-text" href="#blue">Nav 2</a></li>
-                    <li><a class="lovelo-black nav-text" href="#green">Nav 3</a></li>
+                    <li ><a class="lovelo-black nav-text"href="#tech-description">Nav 1</a></li>
+                    <li ><a class="lovelo-black nav-text" href="#laser-market">Nav 2</a></li>
+                    <li><a class="lovelo-black nav-text" href="#target-business">Nav 3</a></li>
                 </ul>
             </div>
         </nav>
@@ -105,6 +105,17 @@
             </table>
         </div>
     </section>
+    <section id="business-model-section" class="aurora-outer" style="height: 100vh">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h2 class="">
+                        Test String
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="target-business" class="black center">
         <div id="target-carousel" class="carousel carousel-slider center">
             <div class="carousel-item black white-text" href="#1" style="overflow:visible !important">
@@ -138,16 +149,27 @@
         </div>
 
     </section>
+    <section>
+        <div id="particles-js2">
+            <div id="particle-container2">
+                <h1 class="lovelo-black particle-header-text" style="margin:0">Multifaceted</h1>
+                <h1 class="lovelo-bold particle-header-text" style="margin:0">Prisms</h1>
+                <h3 class="lovelo-black leading-name" style="margin-bottom:0">Adam Monroe</h3>
+                <h3 class="lovelo-black" style="margin:0">Daniel Eaton</h3>
+                <h3 class="lovelo-black" style="margin:0">Johnathan Semper</h3>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script type="text/javascript">
-    var elem = document.querySelector('.carousel');
-    var instance = M.Carousel.init(elem);
-    //var elem = document.querySelector('.scrollspy');
-    //var instance = M.ScrollSpy.init(elem, options);
+    let elem = document.querySelector('.carousel');
+    let instance = M.Carousel.init(elem);
+    let elemScrollspy = document.querySelector('.scrollspy');
+    let instanceScrollSpy = M.ScrollSpy.init(elemScrollspy);
 
 
 
